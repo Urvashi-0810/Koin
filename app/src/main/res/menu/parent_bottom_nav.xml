@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_parent_dashboard"
+        android:icon="@drawable/ic_dashboard"
+        android:title="Dashboard" />
+    <item
+        android:id="@+id/nav_parent_children"
+        android:icon="@drawable/ic_children"
+        android:title="Children" />
+    <item
+        android:id="@+id/nav_parent_challenges"
+        android:icon="@drawable/ic_challenge"
+        android:title="Challenges" />
+    <item
+        android:id="@+id/nav_parent_apps"
+        android:icon="@drawable/ic_apps"
+        android:title="App Categories" />
+</menu>

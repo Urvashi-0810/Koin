@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission
+        android:name="android.permission.PACKAGE_USAGE_STATS"
+        tools:ignore="ProtectedPermissions" />
+
+    <application
+        android:name=".KoinApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Koin">
+
+        <!-- AdMob Google Mobile Ads App ID (Google Sample Test ID) -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713" />
+
+        <!-- Splash Activity / Launcher -->
+        <activity
+            android:name=".ui.auth.SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Koin">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Role Selection -->
+        <activity
+            android:name=".ui.auth.RoleSelectionActivity"
+            android:exported="false" />
+
+        <!-- Parent Auth & Main -->
+        <activity
+            android:name=".ui.auth.ParentLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.parent.ParentMainActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ui.parent.ParentPayoutSummaryActivity"
+            android:exported="false" />
+
+        <!-- Child Auth & Main -->
+        <activity
+            android:name=".ui.auth.FamilyCodeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.child.ChildMainActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Subscriptions / Paywall -->
+        <activity
+            android:name=".ui.subscriptions.PaywallActivity"
+            android:exported="false" />
+
+        <!-- Legacy MainActivity redirect -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+
+    </application>
+
+</manifest>

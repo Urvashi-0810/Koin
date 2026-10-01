@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_child_dashboard"
+        android:icon="@drawable/ic_dashboard"
+        android:title="Today\'s Score" />
+    <item
+        android:id="@+id/nav_child_challenges"
+        android:icon="@drawable/ic_challenge"
+        android:title="Challenges &amp; Tasks" />
+    <item
+        android:id="@+id/nav_child_leaderboard"
+        android:icon="@drawable/ic_leaderboard"
+        android:title="Leaderboard &amp; Badges" />
+</menu>
